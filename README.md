@@ -54,6 +54,7 @@ For example, to add a new migration from the root folder:
 
 dotnet ef migrations add Initial -p src/Infrastructure -s src/WebUi -o Persistence/Migrations
 UserName = administrator@localhost Pwd = Administrator1!
+dotnet aspnet-codegenerator identity -dc CleanArchitecture.Infrastructure.Persistence.ApplicationDbContext --files "Account.Register;Account.Login"
 
 ## Overview
 
